@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmsiProNormal-Bold.ttf">
+            <string>AmsiProNormal-Bold</string>
+        </array>
+        <array key="AmsiProNormal-Regular.ttf">
+            <string>AmsiProNormal-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Ticket Status Comment Alert-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TicketStatusCommentAlert" id="Y6W-OH-hqX" customClass="TicketStatusCommentAlert" customModule="Smart_Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtb-Th-JLk">
+                                <rect key="frame" x="20" y="201" width="353" height="375"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to left comment?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olo-xv-eCa">
+                                        <rect key="frame" x="20" y="53" width="313" height="48"/>
+                                        <fontDescription key="fontDescription" name="AmsiProNormal-Bold" family="Amsi Pro" pointSize="24"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.76470588240000004" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHH-yJ-qG9">
+                                        <rect key="frame" x="30" y="151" width="293" height="128"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-hV-gzj" customClass="CustomTextView" customModule="Smart_Tasks" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="10" width="273" height="108"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AmsiProNormal-Regular" family="Amsi Pro" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="A95-gJ-9ql"/>
+                                            <constraint firstAttribute="trailing" secondItem="tvB-hV-gzj" secondAttribute="trailing" constant="10" id="Iit-Sy-p9l"/>
+                                            <constraint firstAttribute="bottom" secondItem="tvB-hV-gzj" secondAttribute="bottom" constant="10" id="ade-4O-mkF"/>
+                                            <constraint firstItem="tvB-hV-gzj" firstAttribute="top" secondItem="LHH-yJ-qG9" secondAttribute="top" constant="10" id="fH0-sJ-56b"/>
+                                            <constraint firstItem="tvB-hV-gzj" firstAttribute="leading" secondItem="LHH-yJ-qG9" secondAttribute="leading" constant="10" id="hhI-Mx-FHe"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="doL-vf-Oo8">
+                                        <rect key="frame" x="24" y="299" width="305" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ef-xc-mnZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
+                                                <color key="backgroundColor" name="Green"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="vgi-r0-ZmN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmsiProNormal-Regular" family="Amsi Pro" pointSize="15"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="submitTappedWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tvu-0T-ZLQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sf-OU-qcy">
+                                                <rect key="frame" x="157" y="0.0" width="148" height="30"/>
+                                                <color key="backgroundColor" name="Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="GcX-zH-NdG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmsiProNormal-Regular" family="Amsi Pro" pointSize="15"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelTappedWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7vo-ZZ-Gqj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13736417889999999" green="0.14495691660000001" blue="0.15294235940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="LHH-yJ-qG9" firstAttribute="top" secondItem="olo-xv-eCa" secondAttribute="bottom" constant="50" id="4Cq-t3-fkn"/>
+                                    <constraint firstItem="olo-xv-eCa" firstAttribute="top" secondItem="Rtb-Th-JLk" secondAttribute="top" constant="53" id="4zq-3c-AuD"/>
+                                    <constraint firstAttribute="trailing" secondItem="olo-xv-eCa" secondAttribute="trailing" constant="20" id="6hJ-ow-B1s"/>
+                                    <constraint firstAttribute="trailing" secondItem="LHH-yJ-qG9" secondAttribute="trailing" constant="30" id="ESf-rd-SbZ"/>
+                                    <constraint firstItem="LHH-yJ-qG9" firstAttribute="leading" secondItem="Rtb-Th-JLk" secondAttribute="leading" constant="30" id="QIr-dV-FsS"/>
+                                    <constraint firstItem="doL-vf-Oo8" firstAttribute="top" secondItem="LHH-yJ-qG9" secondAttribute="bottom" constant="20" id="Tpz-mx-85h"/>
+                                    <constraint firstItem="olo-xv-eCa" firstAttribute="leading" secondItem="Rtb-Th-JLk" secondAttribute="leading" constant="20" id="UMr-Nw-qEq"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="doL-vf-Oo8" secondAttribute="trailing" constant="24" id="UTw-aG-hhO"/>
+                                    <constraint firstItem="doL-vf-Oo8" firstAttribute="centerX" secondItem="Rtb-Th-JLk" secondAttribute="centerX" id="d5q-Z8-Whz"/>
+                                    <constraint firstItem="doL-vf-Oo8" firstAttribute="leading" secondItem="Rtb-Th-JLk" secondAttribute="leading" constant="24" id="h4f-al-pUf"/>
+                                    <constraint firstItem="olo-xv-eCa" firstAttribute="centerX" secondItem="Rtb-Th-JLk" secondAttribute="centerX" id="ich-Qq-4eY"/>
+                                    <constraint firstAttribute="bottom" secondItem="doL-vf-Oo8" secondAttribute="bottom" constant="46" id="v6N-3d-5SJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rtb-Th-JLk" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="4f9-5f-izt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rtb-Th-JLk" secondAttribute="trailing" constant="20" id="FXR-Ka-FFI"/>
+                            <constraint firstItem="Rtb-Th-JLk" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" constant="-50" id="TU4-ps-79w"/>
+                            <constraint firstItem="Rtb-Th-JLk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="aza-Jg-NOl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="tvB-hV-gzj" id="SDP-rk-5ZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Green">
+            <color red="0.23529411764705882" green="0.52941176470588236" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.93725490196078431" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
